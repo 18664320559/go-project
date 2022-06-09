@@ -10,6 +10,11 @@ func indexHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
+	/**
+
+	加两行注释
+	*/
+
 	http.HandleFunc("/", indexHandler)
 	http.ListenAndServe(":8000", nil)
 
